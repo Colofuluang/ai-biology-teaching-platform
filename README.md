@@ -45,7 +45,7 @@
 
 **克隆仓库**
 ```bash
-git clone https://github.com/yourusername/ai-biology-teaching-platform.git
+git clone https://github.com/yourusername/ai-biology-teaching-platform.git](https://github.com/Colofuluang/ai-biology-teaching-platform.git
 cd ai-biology-teaching-platform
 ```
 
