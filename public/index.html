@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI辅助高中生物教学平台</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-dna"></i>
+            <h1>AI辅助高中生物教学平台</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#"><i class="fas fa-home"></i> 首页</a>
+            <a href="#"><i class="fas fa-book"></i> 课程</a>
+            <a href="#"><i class="fas fa-chart-bar"></i> 学习报告</a>
+            <a href="#"><i class="fas fa-cog"></i> 设置</a>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">课程章节</h3>
+                <ul class="topics" id="chaptersList">
+                    <!-- 章节列表将通过JS动态生成 -->
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">学习工具</h3>
+                <ul class="topics">
+                    <li><i class="fas fa-book-open"></i> 词汇手册</li>
+                    <li><i class="fas fa-image"></i> 生物图库</li>
+                    <li><i class="fas fa-video"></i> 实验视频</li>
+                    <li><i class="fas fa-clipboard-list"></i> 错题本</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">最近学习</h3>
+                <ul class="topics">
+                    <li><i class="fas fa-file-alt"></i> 有丝分裂过程</li>
+                    <li><i class="fas fa-file-alt"></i> DNA复制机制</li>
+                    <li><i class="fas fa-file-alt"></i> 孟德尔遗传定律</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section quick-test">
+                <button class="btn" id="startTestBtn"><i class="fas fa-brain"></i> 开始知识点测试</button>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                AI生物助教 <span class="ai-indicator" id="aiStatus">在线</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai">
+                    <div class="message-content">
+                        你好！我是AI生物助教，专注高中生物学科教学。<br>我可以帮助你解答生物概念、实验原理、遗传计算等问题。<br>请问你现在在学习什么内容？
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="userInput" placeholder="输入你的生物问题...">
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="resources" id="resourcesContainer">
+            <!-- 资源区域将通过JS动态生成 -->
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
