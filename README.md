@@ -1,6 +1,3 @@
-以下是你提供内容的完整 Markdown 原始代码（`.md` 格式），适合用作项目的 `README.md` 文件：
-
-````markdown
 # 🧬 AI辅助高中生物教学平台
 
 ## 项目概述
@@ -50,7 +47,7 @@
 ```bash
 git clone https://github.com/yourusername/ai-biology-teaching-platform.git
 cd ai-biology-teaching-platform
-````
+```
 
 **安装依赖**
 
